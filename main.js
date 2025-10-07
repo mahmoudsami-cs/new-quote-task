@@ -60,8 +60,9 @@ var randomValidation;
 
 function newQuotation() {
   var randomNum = randomNumber();
-  if (randomNum == randomValidation) {
-    randomNumber();
+
+  while (randomNum === randomValidation) {
+    randomNum = randomNumber();
   }
 
   quotation.innerHTML = quotationList[randomNum].quote;
