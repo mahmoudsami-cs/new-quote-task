@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="animate__animated animate__backInLeft">Quote of the Day</h1>
+      <p class="animate__animated animate__backInRight">
+        Press the button below to recieve a random quote!
+      </p>
+      <button
+        class="animate__animated animate__zoomIn"
+        onclick="newQuotation()"
+      >
+        new quote
+      </button>
+      <p id="quotation"></p>
+      <p id="author"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
